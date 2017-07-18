@@ -17,6 +17,10 @@
 	         .state('collection', {
 	         	 url: '/collection',
 	         	 templateurl: '/templates/collection.html'
+	         })
+	         .state('index', {
+	         	url: '/index',
+	         	templateurl:'/'
 	         });
 	     }
 
