@@ -16,11 +16,11 @@
 	         })
 	         .state('collection', {
 	         	 url: '/collection',
-	         	 templateurl: '/templates/collection.html'
+	         	 templateUrl: '/templates/collection.html'
 	         })
 	         .state('index', {
 	         	url: '/index',
-	         	templateurl:'/'
+	         	templateUrl:'/templates/landing.html'
 	         });
 	     }
 
