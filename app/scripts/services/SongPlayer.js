@@ -128,10 +128,11 @@
         * @type {Object}
         */
         SongPlayer.next = function(){
+            
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
 
-            if (currentSongIndex > Object.keys(currentAlbum).length) {
+            if (currentSongIndex ===  currentAlbum.songs.length) {
                 stopSong();
             } else {
                 var song = currentAlbum.songs[currentSongIndex];
