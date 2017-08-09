@@ -87,6 +87,12 @@
         SongPlayer.currentTime = null;
 
         /**
+        * @desc Default volume
+        * @type {Number}
+        */
+        SongPlayer.volume = 70;
+
+        /**
         * @function SongPLayer.play
         * @desc if the current song is not equal to the Buzz ojject song, 
         * then a new song will be loaded and start playing. If the current song
@@ -162,6 +168,18 @@
             if (currentBuzzObject) {
                 currentBuzzObject.setTime(time);
             }
+        };
+
+        /**
+        * @function setVolume
+        * @desc Set current volume
+        * @param {Number} volume
+        */
+        SongPlayer.setVolume = function(volume) {
+            if (currentBuzzObject) {
+                currentBuzzObject.setVolume(volume);
+            }
+            SongPlayer.volume = volume;
         };
 
         return SongPlayer;
